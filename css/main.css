@@ -79,3 +79,24 @@ button:hover {
 button:active {
     background-color: rgb(150, 150, 150);
 }
+
+/* Mobile Styles (small screens) */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+}
