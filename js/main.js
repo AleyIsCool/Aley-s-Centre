@@ -1,7 +1,7 @@
 let page = document;
 
 let link_buttons = {
-    menu_button: {button: page.getElementById("menu-button"), page_link: "menu.html"},
+    menu_button: {button: page.getElementById("menu-button"), page_link: "index.html"},
     profile_button: {button: page.getElementById("profile-button"), page_link: "profile.html"}
 };
 
@@ -38,3 +38,4 @@ for (const key in link_buttons) {
 if (global_buttons.strawberry_cheese_cake_button) {
     global_buttons.strawberry_cheese_cake_button.addEventListener("click", strawberry_cheese_cake_button_click);
 }
+
