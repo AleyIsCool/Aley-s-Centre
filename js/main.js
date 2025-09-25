@@ -1,8 +1,13 @@
 let page = document;
 
+let links = {
+    menu: "menu.html",
+    profile: "profile.html"
+}
+
 let link_buttons = {
-    menu_button: {button: page.getElementById("menu-button"), page_link: "index.html"},
-    profile_button: {button: page.getElementById("profile-button"), page_link: "profile.html"}
+    menu_button: {button: page.getElementById("menu-button"), page_link: links.menu},
+    profile_button: {button: page.getElementById("profile-button"), page_link: links.profile}
 };
 
 let global_buttons = {
@@ -11,10 +16,6 @@ let global_buttons = {
 
 let sounds = {
     Strawberrycheesecake: new Audio("sounds/StrawberryCheeseCake.mp3")
-}
-
-let links = {
-
 }
 
 function go_to_link(page_link) {
@@ -38,4 +39,3 @@ for (const key in link_buttons) {
 if (global_buttons.strawberry_cheese_cake_button) {
     global_buttons.strawberry_cheese_cake_button.addEventListener("click", strawberry_cheese_cake_button_click);
 }
-
